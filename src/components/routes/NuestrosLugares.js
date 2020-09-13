@@ -8,8 +8,6 @@ import img3 from '../../images/P1040083.jpg'
 
 const NuestrosLugares = () => {
 
-
-
   return (
     <div id="section">
       <Container>
@@ -19,10 +17,14 @@ const NuestrosLugares = () => {
         <br />
         <br />
         <br />
-        <h1>
-          Nuestro lugares
-        </h1>
-        <h4>Galeria de imagenes capturadas en salidas</h4>
+        <div className="titulos">
+          <h1 className="text-center">
+            <b>Nuestros lugares</b>
+          </h1>
+          <h4>
+            Galeria de imagenes capturadas en salidas
+          </h4>
+        </div>
         <br />
         <br />
         <div className="anchoCarrusel">

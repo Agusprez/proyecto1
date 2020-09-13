@@ -2,6 +2,13 @@
   min-height: 3.5rem;
   background-color: #fff;
 }
+.noStyle, .noStyle:hover, .noStyle:visited, .style, .style:hover, .style:visited{
+  text-decoration: none;
+}
+
+.style{
+  color: rgba(255, 255, 255, 0.5);
+}
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
@@ -43,12 +50,12 @@
     padding: 0.5rem 0;
     color: rgba(255, 255, 255, 0.5);
   }
-  #mainNav .nav-link {
+  #mainNav .nav-link{
     transition: none;
     padding: 2rem 1.5rem;
     color: rgba(255, 255, 255, 0.5);
   }
-  #mainNav .nav-link:hover {
+  #mainNav .nav-link:hover , .style1:hover{
     color: rgba(255, 255, 255, 0.75);
   }
   #mainNav .nav-link:active {
@@ -57,7 +64,7 @@
   #mainNav.navbar-shrink {
     background-color: #fff;
   }
-  #mainNav.navbar-shrink .navbar-brand, #mainNav .default{
+  #mainNav.navbar-shrink .navbar-brand, #mainNav .default, .noStyle{
     color: #000000;
   }
   #mainNav.navbar-shrink .nav-link {
@@ -65,7 +72,7 @@
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
-  #mainNav.navbar-shrink .nav-link:hover, #mainNav .default:hover {
+  #mainNav.navbar-shrink .nav-link:hover, #mainNav .default:hover, .noStyle:hover {
     color: #64a19d;
   }
   #mainNav.navbar-shrink .nav-link:active , #mainNav .active {

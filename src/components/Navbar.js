@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./cssComponents/navbar.css";
 import brand from '../images/brand.png';
-import { Link, animateScroll, scrollSpy } from 'react-scroll';
+import { Link, animateScroll, scrollSpy, Events } from 'react-scroll';
 import { Container } from 'react-bootstrap';
 import { useLocation, Link as LinkRoute } from 'react-router-dom'
 
@@ -10,6 +10,24 @@ const Navbar = () => {
   const [backgroundNav, setBackgroundNav] = useState(false);
   const location = useLocation();
 
+  useEffect(() => {
+    Events.scrollEvent.register('begin', function (to, element) {
+      console.log('begin', arguments);
+    });
+
+    Events.scrollEvent.register('end', function (to, element) {
+      console.log('end', arguments);
+    });
+
+    scrollSpy.update();
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      Events.scrollEvent.remove('begin');
+      Events.scrollEvent.remove('end');
+    }
+  }, []);
 
   useEffect(() => {
     changeBackground();
@@ -18,7 +36,6 @@ const Navbar = () => {
   const changeBackground = () => {
 
     console.log(location.pathname)
-
     if ((location.pathname !== "/") || window.scrollY >= 50) {
       setBackgroundNav(true)
     } else {
@@ -36,7 +53,12 @@ const Navbar = () => {
         <div
           className="navbar-brand"
           onClick={() => { animateScroll.scrollToTop() }}>
-          <img src={backgroundNav ? brand : ""} alt="" />
+
+          <LinkRoute className={backgroundNav ? "noStyle" : "style"} to="/">
+            <img src={backgroundNav ? brand : ""} alt="" />
+          </LinkRoute>
+
+
         </div>
         <button
           className="navbar-toggler navbar-toggler-right"
@@ -55,15 +77,18 @@ const Navbar = () => {
           <ul className="navbar-nav ml-auto">
             {/* Nosotros */}
             <li className="nav-item">
+
               <Link
                 className={backgroundNav ? "nav-link default" : "nav-link"}
                 activeClass="active"
                 spy={true} to="about"
                 smooth={true}
                 duration={1000} >
-
-                Nosotros
+                <LinkRoute className={backgroundNav ? "noStyle" : "style"} to="/">
+                  Nosotros
+                </LinkRoute>
               </Link>
+
             </li>
             {/* Proyectos */}
             <li className="nav-item">
@@ -74,7 +99,9 @@ const Navbar = () => {
                 to="projects"
                 smooth={true}
                 duration={1000}>
-                Proyectos
+                <LinkRoute className={backgroundNav ? "noStyle" : "style"} to="/">
+                  Proyectos
+                </LinkRoute>
               </Link>
             </li>
             {/* Contacto */}
@@ -86,8 +113,9 @@ const Navbar = () => {
                 to="signup"
                 smooth={true}
                 duration={1000}>
-
-                Contacto
+                <LinkRoute className={backgroundNav ? "noStyle" : "style"} to="/">
+                  Contacto
+                  </LinkRoute>
               </Link>
             </li>
           </ul>

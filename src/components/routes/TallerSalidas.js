@@ -14,7 +14,14 @@ const TallerSalida = () => {
       <br />
       <br />
       <br />
-      <Container >
+      <Container className="titulos">
+        <h1 className="text-center">
+          <b>Talleres y Salidas</b>
+        </h1>
+        <br />
+        <h3>
+          ¡Acá vas a encontrar todo lo que estamos preparando para vos!
+        </h3>
         <Row>
           <Card style={{ width: '18rem', margin: '2rem' }}>
             <Card.Img style={{ height: "12rem" }} variant="top" src={card1} />

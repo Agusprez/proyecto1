@@ -8,7 +8,43 @@
 .anchoCarrusel{
   margin-right: auto;
   margin-left: auto;
-  width: 70%;
+  width: 60%;
+  -webkit-box-shadow: 2px 0px 44px 15px rgba(0,0,0,0.81);
+  -moz-box-shadow: 2px 0px 44px 15px rgba(0,0,0,0.81);
+  box-shadow: 2px 0px 44px 15px rgba(0,0,0,0.81);
+  
+}
+h1{
+font-size: 50px;
+font-family: 'Shadows Into Light', cursive;
+
+}
+
+.titulos{
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  height: auto;
+  background-color: rgba(251, 251, 255, 0.301);  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;  
+  padding: 15px;
+  -webkit-box-shadow: 1px 0px 44px 1px rgba(0,0,0,0.81);
+  -moz-box-shadow: 1px 0px 44px 1px rgba(0,0,0,0.81);
+  box-shadow: 1px 0px 44px 1px rgba(0,0,0,0.81);
+}
+.titulos-1{
+  
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  height: auto;
+  background-color: rgba(251, 251, 255, 0.301);
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;  
+  padding: 20px;
   -webkit-box-shadow: 2px 0px 44px 15px rgba(0,0,0,0.81);
   -moz-box-shadow: 2px 0px 44px 15px rgba(0,0,0,0.81);
   box-shadow: 2px 0px 44px 15px rgba(0,0,0,0.81);

@@ -41,7 +41,8 @@ const Project = () => {
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Quis molestiae labore natus sapiente tempore ipsam adipisci
                     rerum, minus ducimus eaque voluptatem dolore provident
-                    nostrum, aliquam autem placeat eius culpa beatae. <Link to="/talleres">Ver más</Link>
+                    nostrum, aliquam autem placeat eius culpa beatae.
+                    <Link to="/talleres">Ver más</Link>
                   </p>
                   <hr class="d-none d-lg-block mb-0 ml-0" />
                 </div>
