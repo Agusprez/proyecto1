@@ -25,12 +25,18 @@
   outline: none;
   background-color: transparent;
 }
+#mainNav .active {
+  color: #64a19d;
+  outline: none;
+  border-bottom: 0.25rem solid #64a19d;
+}
+
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: transparent;
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -51,7 +57,7 @@
   #mainNav.navbar-shrink {
     background-color: #fff;
   }
-  #mainNav.navbar-shrink .navbar-brand {
+  #mainNav.navbar-shrink .navbar-brand, #mainNav .default{
     color: #000000;
   }
   #mainNav.navbar-shrink .nav-link {
@@ -62,7 +68,7 @@
   #mainNav.navbar-shrink .nav-link:hover {
     color: #64a19d;
   }
-  #mainNav.navbar-shrink .nav-link:active {
+  #mainNav.navbar-shrink .nav-link:active , #mainNav .active {
     color: #467370;
   }
   #mainNav.navbar-shrink .nav-link.active {
@@ -70,4 +76,8 @@
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
   }
+}
+
+img{
+  height: 80px;
 }
