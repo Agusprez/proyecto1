@@ -10,9 +10,9 @@ const Header = () => {
           <h2 className="text-white-50 mx-auto mt-2 mb-5">
             Nacemos de las ganas de compartir aquello que nos apasiona.
           </h2>
-          <a className="btn btn-light js-scroll-trigger" href="#about"
-          >Descubrinos</a
-          >
+          <a className="btn btn-light js-scroll-trigger"  >
+            Descubrinos
+          </a>
         </div>
       </div>
     </header>

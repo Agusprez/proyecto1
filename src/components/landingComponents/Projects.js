@@ -4,6 +4,7 @@ import imagen2 from '../../images/row-image-1.jpg'
 import imagen3 from '../../images/row-image-2.jpg'
 import imagen4 from '../../images/row-image-3.jpg'
 import '../cssComponents/projects.css'
+import { Link } from 'react-router-dom';
 
 const Project = () => {
 
@@ -35,13 +36,13 @@ const Project = () => {
             <div class="bg-black text-center h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">Salidas</h4>
+                  <h4 class="text-white">Taleres y salidas</h4>
                   <p class="mb-0 text-white-50">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Quis molestiae labore natus sapiente tempore ipsam adipisci
                     rerum, minus ducimus eaque voluptatem dolore provident
-                    nostrum, aliquam autem placeat eius culpa beatae.
-                </p>
+                    nostrum, aliquam autem placeat eius culpa beatae. <Link to="/talleres">Ver más</Link>
+                  </p>
                   <hr class="d-none d-lg-block mb-0 ml-0" />
                 </div>
               </div>
@@ -62,8 +63,8 @@ const Project = () => {
                     Magnam dolorum officiis voluptates. Rerum minima iusto
                     obcaecati voluptatibus ratione debitis animi corporis qui
                     nostrum vero? Ab cumque eaque voluptates aspernatur
-                    voluptate.
-                </p>
+                    voluptate.<Link to="/expediciones">Ver más</Link>
+                  </p>
                   <hr class="d-none d-lg-block mb-0 mr-0" />
                 </div>
               </div>
@@ -83,8 +84,8 @@ const Project = () => {
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Quis molestiae labore natus sapiente tempore ipsam adipisci
                     rerum, minus ducimus eaque voluptatem dolore provident
-                    nostrum, aliquam autem placeat eius culpa beatae.
-                </p>
+                    nostrum, aliquam autem placeat eius culpa beatae.<Link to="/lugares">Ver más</Link>
+                  </p>
                   <hr class="d-none d-lg-block mb-0 ml-0" />
                 </div>
               </div>
