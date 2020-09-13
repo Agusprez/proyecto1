@@ -1,14 +1,16 @@
 import React from 'react';
 import Header from './landingComponents/Header'
 import About from './landingComponents/About';
+import Project from './landingComponents/Projects';
+import SignUp from './landingComponents/SignUp';
 
 const Landing = () => {
   return (
     <>
       <Header></Header>
       <About></About>
-      <h1>Agus</h1>
-
+      <Project></Project>
+      <SignUp></SignUp>
     </>
   )
 };

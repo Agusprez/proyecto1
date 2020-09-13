@@ -5,3 +5,6 @@
 .about-section p {
   margin-bottom: 5rem;
 }
+.bg-black {
+  background-color: #000000 !important;
+}

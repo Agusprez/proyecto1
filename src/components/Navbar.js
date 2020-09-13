@@ -4,9 +4,6 @@ import "./cssComponents/navbar.css"
 
 const Navbar = () => {
 
-  useEffect(() => {
-
-  });
 
   return (
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">

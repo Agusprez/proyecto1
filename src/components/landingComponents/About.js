@@ -15,7 +15,6 @@ const About = () => {
             </p>
           </div>
         </div>
-        <img class="img-fluid" src="assets/img/ipad.png" alt="" />
       </div>
     </section>
   )
