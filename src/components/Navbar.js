@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import "./cssComponents/navbar.css";
 import brand from '../images/brand.png';
-import { Link, animateScroll, scrollSpy, Events } from 'react-scroll';
+import { Link, animateScroll } from 'react-scroll';
 import { Container } from 'react-bootstrap';
 import { useLocation, Link as LinkRoute } from 'react-router-dom'
-import { scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
 
 const Navbar = () => {
 
@@ -35,8 +34,6 @@ const Navbar = () => {
   }
   //Llama a la funcion cuando se produce el scroll en la pagina
   window.addEventListener('scroll', changeBackground)
-
-
 
   if (ruta === "/") {
     return (

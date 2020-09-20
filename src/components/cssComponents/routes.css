@@ -8,16 +8,18 @@
 .anchoCarrusel{
   margin-right: auto;
   margin-left: auto;
-  width: 60%;
+  width: 75%;
   -webkit-box-shadow: 2px 0px 44px 15px rgba(0,0,0,0.81);
   -moz-box-shadow: 2px 0px 44px 15px rgba(0,0,0,0.81);
   box-shadow: 2px 0px 44px 15px rgba(0,0,0,0.81);
   
 }
-h1{
-font-size: 50px;
-font-family: 'Shadows Into Light', cursive;
-
+h1, h3{
+  font-size: 50px;
+  font-family: 'Shadows Into Light', cursive;
+}
+h3{
+  font-size:30px;
 }
 
 .titulos{
