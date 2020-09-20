@@ -11,19 +11,16 @@ import NuestrosLugares from "./components/routes/NuestrosLugares";
 
 function App() {
   return (
-    <>
+    <div>
       <BrowserRouter>
-
         <Navbar />
         <Route path="/" exact component={Landing} />
         <Route path="/talleres" exact component={TallerSalidas} />
         <Route path="/expediciones" exact component={Expediciones} />
         <Route path="/lugares" exact component={NuestrosLugares} />
-
         <Footer />
-
       </BrowserRouter>
-    </>
+    </div>
   )
 }
 
