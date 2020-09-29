@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  margin-top:50px;
 }
 .anchoCarrusel{
   margin-right: auto;
@@ -21,13 +22,13 @@ h1, h3{
 h3{
   font-size:30px;
 }
-
 .titulos{
   margin-right: auto;
   margin-left: auto;
   width: 80%;
   height: auto;
-  background-color: rgba(251, 251, 255, 0.301);  -webkit-border-radius: 13px;
+  background-color: rgba(251, 251, 255, 0.5);  
+  -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
   border-radius: 13px;  
   padding: 15px;
@@ -36,7 +37,6 @@ h3{
   box-shadow: 1px 0px 44px 1px rgba(0,0,0,0.81);
 }
 .titulos-1{
-  
   font-weight: bold;
   margin-right: auto;
   margin-left: auto;
@@ -50,4 +50,7 @@ h3{
   -webkit-box-shadow: 2px 0px 44px 15px rgba(0,0,0,0.81);
   -moz-box-shadow: 2px 0px 44px 15px rgba(0,0,0,0.81);
   box-shadow: 2px 0px 44px 15px rgba(0,0,0,0.81);
+}
+.espaciado {
+  height: 100px;
 }

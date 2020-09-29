@@ -15,21 +15,21 @@ const Project = () => {
         position: true,
         linkTo: "/talleres",
         title: "Talleres y salidas",
-        description: "blablabla",
+        description: "Nuestra propuesta de aprendizaje, para que juntos, podamos tener la seguridad necesaria en la montaña.",
         img: talleresIMG
       },
       {
         position: false,
         linkTo: "/expediciones",
         title: "Expediciones y logística",
-        description: "blablabla",
+        description: "En este espacio te podras contactar con nosotros de manera directa.",
         img: expedicionesIMG
       },
       {
         position: true,
         linkTo: "/lugares",
         title: "Nuestros lugares",
-        description: "blablabla",
+        description: "Argentina, llena de experiencias por vivir...",
         img: lugaresIMG
       }
     ]

@@ -104,7 +104,7 @@ const Navbar = () => {
     return (
       <nav
         id="mainNav"
-        className="navbar bg-color navbar-expand-lg navbar-light fixed-top"
+        className="navbar bg-color navbar-expand-lg navbar-light fixed-top margenInferior"
         style={backgroundNav ? { backgroundColor: "white" } : { backgroundColor: "transparent" }}>
         <Container>
           {/* Icono de la pagina */}

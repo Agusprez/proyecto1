@@ -7,11 +7,7 @@ const Expediciones = () => {
 
   return (
     <div id="section" >
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <div className="espaciado"></div>
       <Container className="titulos-1">
 
         <h1 className="text-center">
@@ -42,9 +38,7 @@ const Expediciones = () => {
           </Form.Group>
           <Button variant="primary">Contactate con nosotros!</Button>
         </Form>
-        <br />
-        <br />
-        <br />
+        <div className="espaciado"></div>
       </Container>
     </div>
   )

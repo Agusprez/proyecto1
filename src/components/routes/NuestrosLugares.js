@@ -8,12 +8,7 @@ const NuestrosLugares = () => {
   return (
     <div id="section">
       <Container>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <div className="espaciado"></div>
         <div className="titulos">
           <h1 className="text-center">
             <b>Nuestros lugares</b>
@@ -21,12 +16,7 @@ const NuestrosLugares = () => {
           <h4>
             Galeria de imagenes capturadas en salidas
           </h4>
-
-          <br />
-          <br />
           <Carrousel />
-          <br />
-          <br />
         </div>
 
       </Container>
