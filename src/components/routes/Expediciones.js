@@ -2,7 +2,14 @@ import React from 'react';
 import { Container, Form, Button } from 'react-bootstrap'
 import '../cssComponents/routes.css'
 
+/* TODO */
+/* 
 
+// Crear estado en donde se va a ir guardando la info de los INPUTs
+// Conectar con API de envio de Email (Averiguar si existe alguna gratuita)
+// Renderizar una respuesta cuando la API nos diga que el mail fue enviado exitosamente
+
+*/
 const Expediciones = () => {
 
   return (

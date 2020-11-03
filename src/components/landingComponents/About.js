@@ -9,11 +9,14 @@ const About = () => {
         <Row>
           <Col lg={8} className="mx-auto">
             <h2 className="text-white mb-4">Irûtrekk - Actividades de montaña</h2>
-            <p className="text-white-50">
-              Aca puede ir un textito lindo sobre lo que se siente hacer
-              montaña, o como se diga. no tengo mucha idea sobre eso, pero
-              bueno, queria que veas que puede ir algun textito como decoracion.
-            </p>
+
+            <blockquote className="text-white-50">
+              <p className="text-white-50">
+                ¿Por qué subir montañas? Porque están ahí.
+                <br />
+                <small><cite>Lionel Terray</cite></small>
+              </p>
+            </blockquote>
           </Col>
         </Row>
       </Container>
