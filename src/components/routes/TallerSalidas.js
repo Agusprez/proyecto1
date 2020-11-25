@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Spinner } from 'react-bootstrap'
 import '../cssComponents/routes.css'
-import E_Card from './TS_Card'
+import ECard from './TS_Card'
 import firebase from '../../services/firebase';
 
 const TallerSalida = () => {
@@ -58,7 +58,7 @@ const TallerSalida = () => {
             ¡Acá vas a encontrar todo lo que estamos preparando para vos!
         </h3>
           <Row>
-            {estado.productosCargados.map((oneCard) => <E_Card key={oneCard.id} id={oneCard.id} datos={oneCard.data()}> </E_Card>).reverse()}
+            {estado.productosCargados.map((oneCard) => <ECard key={oneCard.id} id={oneCard.id} datos={oneCard.data()}> </ECard>).reverse()}
           </Row>
         </Container>
       </div>

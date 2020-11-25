@@ -49,7 +49,7 @@ const Project = () => {
               <h4>¿Quienes somos?</h4>
               <p className="text-black-50 mb-0">
                 Somos apasionados de la montaña, buscando transmitir nuestra
-                pasion y amor por este . Llegando asi a todos los que quieran
+                pasion y amor por esta actividad. Llegando así a todos los que quieran
                 adentrarse en el mundo de la montaña, con la seguridad y apoyo
                 necesario, para realizar una experiencia de aprendizaje!
               </p>
