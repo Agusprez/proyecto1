@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap'
 import '../cssComponents/routes.css'
+import { useHistory } from "react-router-dom"
 
 /* TODO */
 /* 
@@ -13,6 +14,8 @@ import '../cssComponents/routes.css'
 
 
 const Expediciones = () => {
+
+  const history = useHistory()
 
   const [emailSent, setEmailSent] = useState({
     emailHasBeenSent: false
@@ -56,7 +59,9 @@ const Expediciones = () => {
 
         setEmailSent({ emailHasBeenSent: true });
         console.log(emailSent.emailHasBeenSent)
-
+        setTimeout(() => {
+          history.push("/");
+        }, 2000);
       })
 
   }
