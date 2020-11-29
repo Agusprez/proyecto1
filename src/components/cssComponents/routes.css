@@ -9,7 +9,7 @@
 .anchoCarrusel{
   margin-right: auto;
   margin-left: auto;
-  width: 75%;
+  width: 99%;
   -webkit-box-shadow: 2px 0px 44px 15px rgba(0,0,0,0.81);
   -moz-box-shadow: 2px 0px 44px 15px rgba(0,0,0,0.81);
   box-shadow: 2px 0px 44px 15px rgba(0,0,0,0.81);
@@ -53,4 +53,13 @@ h3{
 }
 .espaciado {
   height: 100px;
+}
+
+.espaciado2 {
+  height: 8px;
+}
+@media (min-width: 600px) {
+  .anchoCarrusel{
+    width: 65%; 
+  }
 }
